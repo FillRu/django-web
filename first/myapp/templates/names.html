@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<h1>Количество товара</h1>
+<ul>
+	{% for name in names %}
+	<li>
+		{{ name.name }}:<br /> OZON {{ name.q_ozon}}<br /> YM: {{ name.q_ym}}<br /> SKLAD: {{ name.q_sklad}}<br /> BAR: {{ name.barcode}}<br /> PRICE: {{ name.price}} 
+	</li>
+	{% endfor %}
+</ul>
+{% endblock %}
